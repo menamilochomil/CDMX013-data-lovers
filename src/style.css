@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-image: url("../Images/Background/footer.jpg");
+    color: white;
+    height: 6rem;
+    
+    
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.credit, .owners {
+    margin-top: 4rem;
+}
