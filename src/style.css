@@ -1,6 +1,6 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 .body{
@@ -36,18 +36,16 @@ img.logo {
 }
 
 footer{
-    background-image: url("../Images/Background/footer.jpg");
+    background-color: black;
     color: white;
     height: 6rem;
-    
-    
 }
-.footer {
+.footer{
     display: flex;
     justify-content: space-between;
     margin-left: 1rem;
     margin-right: 1rem;
 }
-.credit, .owners {
+.credit, .owners{
     margin-top: 4rem;
 }
