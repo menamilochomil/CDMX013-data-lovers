@@ -3,6 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+.body{
+    background-image: url(../Images/Background/star2..jpg);
+}
+/* Header*/
+
+img.logo {
+    width:367;
+    height: 163;
+    margin-left: 40%;
+}
+
+.title, .main{
+    display: flex;
+    justify-content: left;
+    padding: 0px;
+    color: aliceblue;
+}
+
+/*main*/
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url(../Images/Background/slytherin-green-star.jpg);
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+.all-items{
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
 footer{
     background-color: black;
     color: white;
