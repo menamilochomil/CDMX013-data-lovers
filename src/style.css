@@ -1,10 +1,11 @@
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .body{
-    background-image: url("../Images/Background/star2..jpg");
+    background-image: url(../Images/Background/star2..jpg);
 }
 /* Header*/
 
@@ -36,7 +37,7 @@ img.logo {
 }
 
 footer{
-    background-color: black;
+    background-image: url(../Images/Background/footer.jpg);
     color: white;
     height: 6rem;
 }
