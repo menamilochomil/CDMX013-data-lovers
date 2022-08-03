@@ -24,7 +24,7 @@ img.logo {
 }
 
 /*main*/
-.header-character {
+.header-character, .header-spells{
     color: white;
     font-size: 36px;
 }
@@ -40,6 +40,19 @@ img.logo {
     grid-template-rows: repeat(152,35%);
     overflow: scroll;
 
+}
+
+#spells{
+    margin-left: 2rem;
+    background-image: url(./Images/Background/ravenclaw-background-2200.jpg);
+    color: white;
+    height:25rem;
+    width: 95%;
+    border: 1rem solid black;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(61,35%);
+    overflow: scroll;
 }
 
 footer{
