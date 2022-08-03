@@ -25,6 +25,7 @@ img.logo {
 
 /*main*/
 .header-character, .header-spells{
+    margin-top: 1rem;
     color: white;
     font-size: 36px;
 }
@@ -39,9 +40,7 @@ img.logo {
     grid-template-columns: repeat(5,20%);
     grid-template-rows: repeat(152,35%);
     overflow: scroll;
-
 }
-
 #spells{
     margin-left: 2rem;
     background-image: url(./Images/Background/ravenclaw-background-2200.jpg);
@@ -54,7 +53,23 @@ img.logo {
     grid-template-rows: repeat(61,35%);
     overflow: scroll;
 }
-
+.header-potions {
+    margin-top: 1rem;
+    color: white;
+    font-size: 36px;
+}
+#potions{
+    margin-left: 2rem;
+    background-image: url(./Images/Background/gryffindor-sky.jpg);
+    color: white;
+    height:25rem;
+    width: 95%;
+    border: 1rem solid black;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(30,35%);
+    overflow: scroll;
+}
 footer{
     background-image: url(./Images/Background/footer.jpg);
     color: white;
