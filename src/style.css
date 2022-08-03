@@ -16,7 +16,7 @@ img.logo {
     margin-left: 40%;
 }
 
-.title, .main{
+.title {
     display: flex;
     justify-content: left;
     padding: 0px;
@@ -24,17 +24,22 @@ img.logo {
 }
 
 /*main*/
-.main{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-image: url(./Images/Background/slytherin-green-star.jpg);
-    margin-left: 1rem;
-    margin-right: 2rem;
+.header-character {
+    color: white;
+    font-size: 36px;
 }
-.all-items{
-    text-align: center;
-    padding: 1rem;
-    border-radius: 5%;
+#characters{
+    margin-left: 2rem;
+    background-image: url(./Images/Background/slytherin-green-star.jpg);
+    color: white;
+    height:25rem;
+    width: 95%;
+    border: 1rem solid black;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(152,35%);
+    overflow: scroll;
+
 }
 
 footer{
