@@ -1,17 +1,18 @@
-*{
-    
+* {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url(./Images/star.jpg);
 }
+
 /* Header*/
 
 img.logo {
-    width:367;
+    width: 367;
     height: 163;
     margin-left: 40%;
 }
@@ -24,63 +25,88 @@ img.logo {
 }
 
 /*main*/
-.header-character, .header-spells{
-    margin-top: 1rem;
+.header-character,
+.header-spells,
+.header-books,
+.header-potions {
     color: white;
     font-size: 36px;
+    padding: 1%;
 }
-#characters{
+
+#characters {
     margin-left: 2rem;
+    padding: 1%;
     background-image: url(./Images/Background/slytherin-green-star.jpg);
     color: white;
-    height:25rem;
+    height: 25rem;
     width: 95%;
     border: 1rem solid black;
     display: grid;
-    grid-template-columns: repeat(5,20%);
-    grid-template-rows: repeat(152,35%);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(152, 35%);
     overflow: scroll;
 }
-#spells{
+
+#spells {
     margin-left: 2rem;
+    padding: 1%;
     background-image: url(./Images/Background/ravenclaw-background-2200.jpg);
     color: white;
-    height:25rem;
+    height: 25rem;
     width: 95%;
     border: 1rem solid black;
     display: grid;
-    grid-template-columns: repeat(5,20%);
-    grid-template-rows: repeat(61,35%);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(61, 35%);
     overflow: scroll;
 }
-.header-potions {
-    margin-top: 1rem;
-    color: white;
-    font-size: 36px;
-}
-#potions{
+
+#potions {
     margin-left: 2rem;
+    padding: 1%;
     background-image: url(./Images/Background/gryffindor-sky.jpg);
     color: white;
-    height:25rem;
+    height: 25rem;
     width: 95%;
     border: 1rem solid black;
     display: grid;
-    grid-template-columns: repeat(5,20%);
-    grid-template-rows: repeat(30,35%);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(30, 35%);
     overflow: scroll;
 }
-footer{
+
+#books {
+    margin-left: 2rem;
+    padding: 1%;
+    background-image: url(./Images/Background/Hogwarts.png);
+    background-size: cover;
+    color: white;
+    height: 25rem;
+    width: 95%;
+    border: 1rem solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 35%);
+    align-content: space-around;
+    /* overflow: scroll;
+        align-items: center;*/
+}
+
+footer {
     background-image: url(./Images/Background/footer.jpg);
     color: white;
     height: 6rem;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-between;
     margin-left: 1rem;
     margin-right: 1rem;
 }
-.credit, .owners{
+
+.credit,
+.owners {
     margin-top: 4rem;
 }
