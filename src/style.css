@@ -1,5 +1,4 @@
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,18 +9,28 @@ body {
 }
 
 /* Header*/
-
-img.logo {
+.logo {
+    position: relative;
+    z-index: 2;
     width: 367;
     height: 163;
     margin-left: 40%;
+    margin-top: 0px; 
+}
+.explosion {
+    position: absolute;
+    z-index: 1;
+    margin-left: 10%;
+
 }
 
 .title {
     display: flex;
     justify-content: left;
-    padding: 0px;
+    padding: 2rem;
+    margin-top: 50px;
     color: aliceblue;
+    font-size: 48px;
 }
 
 /*main*/
