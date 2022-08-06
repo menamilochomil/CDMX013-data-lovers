@@ -64,11 +64,13 @@ body {
     color: white;
     height: 25rem;
     width: 95%;
-    border: 1rem solid black;
+    border: 0.5rem solid black;
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(61, 35%);
+    gap: 1rem 1rem;
     overflow: scroll;
+    text-align: justify;
 }
 
 #potions {
