@@ -62,13 +62,15 @@ body {
     padding: 1%;
     background-image: url(./Images/Background/ravenclaw-background-2200.jpg);
     color: white;
-    height: 25rem;
+    height: 30rem;
     width: 95%;
-    border: 1rem solid black;
+    border: 0.5rem solid black;
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(5, 19%);
     grid-template-rows: repeat(61, 35%);
+    gap: 1rem 1rem;
     overflow: scroll;
+    align-items: stretch;
 }
 
 #potions {
@@ -76,14 +78,31 @@ body {
     padding: 1%;
     background-image: url(./Images/Background/gryffindor-sky.jpg);
     color: white;
-    height: 25rem;
+    height: 30rem;
     width: 95%;
-    border: 1rem solid black;
+    border: 0.5rem solid black;
     display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(30, 35%);
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(5, 19%);
+    grid-template-rows: repeat(30, 20%);
     overflow: scroll;
+    align-items: stretch;
 }
+
+  /* Name of the potion as a button*/
+  .btn-potions {
+    width: 6.5rem;
+    height: 5.5rem;
+    background: #ffffff40;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+  }
+  .btn-potions:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.532), 0 17px 50px 0 rgba(0, 0, 0, 0.301);
+    transition-duration: 0.4ms;
+  }
 
 /* The Modal (background) */
 .potions-container {
@@ -101,9 +120,9 @@ body {
   }
   
   /* Modal Content */
-  .potions-content {
+  .potions-container1 {
     position: relative;
-    background-color: #fefefe;
+    background-image: url(./Images/Background/gryffindor-sky.jpg);
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -112,29 +131,33 @@ body {
   }
   
   /* The Close Button */
-  #potions-close {
+  .potions-close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
+
   }
   
-  #potions-close:hover,
-  #potions-close:focus {
+  .potions-close:hover,
+  .potions-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
+
+
   /*modal header*/
   .potions-name {
     padding: 2px 16px;
-    background-color: #5cb85c;
-    color: Black;
+    background-color: #ffffff40;
+    color: white;
   }
   
   .potions-description {
     padding: 2px 16px;
-  color:black}
+    color:black
+}
   
 
 #books {
