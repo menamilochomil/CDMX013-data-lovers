@@ -51,8 +51,6 @@ window.addEventListener("click", function(event) {
 })*/
 
 
-data.spells.map(showSpell);
-
 function showSpell (item) {
     const container = document.createElement('div')
     let htmlModal = ` 
@@ -67,10 +65,12 @@ function showSpell (item) {
     <button id="btn-spell${item.id}">${item.name}</button>
     `;
     container.innerHTML=htmlModal
+    
     container.querySelector(`#btn-spell${item.id}`).addEventListener('click', (e)=>{
       e.preventDefault()
       let modal = document.getElementById(`spell-modal${item.id}`);
       modal.style.display = "block";
+
       window.addEventListener("click", function(event) {
         if (event.target == modal) {
           modal.style.display = "none";
