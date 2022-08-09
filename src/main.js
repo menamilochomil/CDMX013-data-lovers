@@ -106,18 +106,16 @@ function showBook(item) {
       if (event.target == modal) {
         modal.style.display = "none";
       }
-<<<<<<< HEAD
-  });
-=======
->>>>>>> 695c1c51104f500d82e0cf4b5c6927a284481075
     });
+
+  });
     return container
-  }
-  
+}
 
 data.books.map((item) => {
   document.getElementById("books").appendChild(showBook(item))
 });
+
    function showCharacters(item) {
     const container = document.createElement('div')
   
