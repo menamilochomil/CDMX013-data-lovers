@@ -106,13 +106,11 @@ function showBook(item) {
       if (event.target == modal) {
         modal.style.display = "none";
       }
-  data.spells.map((item)=>{
-    document.getElementById("spells").appendChild(showSpell(item))
-   });
+  });
     });
-  })
-  return container
-}
+    return container
+  }
+  
 
 data.books.map((item) => {
   document.getElementById("books").appendChild(showBook(item))
