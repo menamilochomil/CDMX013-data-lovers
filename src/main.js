@@ -2,6 +2,56 @@
 
 import data from './data/harrypotter/harryPotter.js';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function showPotions(item) {
   const container = document.createElement('div')
 
@@ -14,6 +64,7 @@ function showPotions(item) {
   </div>
   <button id="btn-potions${item.id}" class="btn-potions">${item.name}</button>
   `;
+
   container.innerHTML = htmln
   container.querySelector(`#btn-potions${item.id}`).addEventListener('click', (e) => {
     e.preventDefault()
@@ -34,6 +85,7 @@ function showPotions(item) {
 
   return container
 }
+
 data.potions.map((item) => {
   document.getElementById("potions").appendChild(showPotions(item))
 });
