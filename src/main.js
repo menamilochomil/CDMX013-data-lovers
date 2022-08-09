@@ -2,7 +2,7 @@
 
 import data from './data/harrypotter/harryPotter.js';
 
-const dataSpells = data.spells;
+/*const dataSpells = data.spells;
 
 
 for (let i = 0; i < dataSpells.length; i++) {
@@ -39,13 +39,46 @@ for (let i = 0; i < dataSpells.length; i++) {
 }
 
 spellName.addEventListener("click", function() {
-    spellModal.style.display = "block"
+    spellModal.style.display = "block";
 })
 closeSpell.addEventListener("click", function () {
-    spellModal.style.display = "none"
+    spellModal.style.display = "none";
 })
 window.addEventListener("click", function(event) {
     if (event.target == spellModal) {
-        spellModal.style.display = "none"
+        spellModal.style.display = "none";
     }
-})
+})*/
+
+
+data.spells.map(showSpell);
+
+function showSpell (item) {
+    const container = document.createElement('div')
+    let htmlModal = ` 
+        <div id="spell-modal${item.id}" class="spell-modal">
+            <div class="spell-content">
+                <span class= "spell-close">&times;</span>
+                <h4 class="spell-name">Name: ${item.name}</h4>
+                <p class="spell-type">Spell Type: ${item.spell_type}</p>
+                <p class="spell-description">Descripción: ${item.description}</p><br>
+            </div>
+        </div>
+    <button id="btn-spell${item.id}">${item.name}</button>
+    `;
+    container.innerHTML=htmlModal
+    container.querySelector(`#btn-spell${item.id}`).addEventListener('click', (e)=>{
+      e.preventDefault()
+      let modal = document.getElementById(`spell-modal${item.id}`);
+      modal.style.display = "block";
+      window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      });
+    })
+     return container
+      }
+  data.spells.map((item)=>{
+    document.getElementById("spells").appendChild(showSpell(item))
+   });
