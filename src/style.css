@@ -86,7 +86,7 @@ body {
 }
 
 /* The Modal (background) */
-#potions-container {
+.potions-container {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 3; /* Sit on top */
@@ -132,7 +132,7 @@ body {
     color: Black;
   }
   
-  .potions-content {
+  .potions-description {
     padding: 2px 16px;
   color:black}
   
