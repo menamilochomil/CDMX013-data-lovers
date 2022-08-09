@@ -56,11 +56,9 @@ body {
     grid-template-rows: repeat(152, 35%);
     overflow: scroll;
 }
-/*spells style*/
-#spells {
+#spells, #books {
     margin-left: 2rem;
     padding: 1%;
-    background-image: url(./Images/Background/ravenclaw-background-2200.jpg);
     height: 30rem;
     width: 95%;
     border: 0.5rem solid black;
@@ -70,10 +68,16 @@ body {
     gap: 1rem 1rem;
     overflow: scroll;
     align-items: stretch;
+
+}
+
+/*spells style*/
+#spells {
+    background-image: url(./Images/Background/ravenclaw-background-2200.jpg);
 }
 
 /* Name od the Spell as a button*/
-.btn-spell-name {
+.btn-spell-name, .btn-book-name {
     width: 6.5rem;
     height: 5.5rem;
     background: #ffffff40;
@@ -82,13 +86,13 @@ body {
     border-radius: 8px;
     color: white;
 }
-.btn-spell-name:hover {
+.btn-spell-name:hover, .btn-book-name:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.532), 0 17px 50px 0 rgba(0, 0, 0, 0.301);
     transition-duration: 0.4ms;
 }
 
 /* The Modal (background) */
-.spell-modal {
+.spell-modal, .book-modal {
     display: none;
     position: fixed;
     z-index: 3;
@@ -101,9 +105,8 @@ body {
     background-color: rgba(0,0,0,0.4);
   }
   /* Modal Content*/
-  .spell-content {
+  .spell-content, .book-content {
     position: relative;
-    background-image: url(./Images/Background/ravenclaw-background-2200.jpg);
     margin: auto;
     padding: 0;
     border: none;
@@ -111,28 +114,36 @@ body {
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   }
+  .spell-content {
+    background-image: url(./Images/Background/ravenclaw-background-2200.jpg);
+  }
    /*The Close Button*/
-  .spell-close {
+  .spell-close, .book-close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   .spell-close:hover,
-  .spell-close:focus {
+  .spell-close:focus,
+  .book-close:hover,
+  .book-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
   /*modal header*/
-  .spell-name {
+  .spell-name, .book-name {
     padding: 2px 16px;
     background-color: #ffffff40;
     color: white;
     height: 2rem;
     border-radius: 8px 8px 0px 0px;
   }
-  .spell-type, .spell-description {
+  .spell-type, 
+  .spell-description, 
+  .book-release-day, 
+  .book-description{
     padding: 2px 16px;
     color: white; 
 }
@@ -153,20 +164,11 @@ body {
 }
 
 #books {
-    margin-left: 2rem;
-    padding: 1%;
     background-image: url(./Images/Background/Hogwarts.png);
-    background-size: cover;
-    color: white;
-    height: 25rem;
-    width: 95%;
-    border: 1rem solid black;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(2, 35%);
-    align-content: space-around;
-    /* overflow: scroll;
-        align-items: center;*/
+}
+
+.book-content {
+    background-image: url(./Images/Background/Hogwarts.png);
 }
 
 footer {
