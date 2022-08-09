@@ -4,24 +4,24 @@ import data from './data/harrypotter/harryPotter.js';
 
 data.potions.map(showPotions);
 function showPotions (item) {
-   return document.getElementById("potions").innerHTML += (` <div id="potions-container">
+   return document.getElementById("potions").innerHTML += ` <div id="potions-container">
             <span class= "potions-close">&times;</span>
             <h4 class="potions-name">Name: ${item.name}</h4>
             <p class="potions-content">Puntuación: ${item.description}</p><br>
             </div>
             <button id="btn-potions">${item.name}</button>
-            `);
+            `;
     }
 
-
+//I need to add a forEach to create a loop for passing the entire array in the functions below
 // Get the modal
-var modal = document.getElementById("potions-container");
+let modal = document.getElementById("potions-container");
 
 // Get the button that opens the modal
-var btn = document.getElementById("btn-potions");
+let btn = document.getElementById("btn-potions");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("potions-close")[0];
+let span = document.getElementsByClassName("potions-close")[0];
 
 // When the user clicks the button, open the modal 
 btn.addEventListener("click", function() {
