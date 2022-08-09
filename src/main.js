@@ -107,13 +107,15 @@ function showBook(item) {
         modal.style.display = "none";
       }
     });
-  })
-  return container
+
+  });
+    return container
 }
 
 data.books.map((item) => {
   document.getElementById("books").appendChild(showBook(item))
 });
+
    function showCharacters(item) {
     const container = document.createElement('div')
   
