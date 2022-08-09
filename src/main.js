@@ -106,9 +106,6 @@ function showBook(item) {
       if (event.target == modal) {
         modal.style.display = "none";
       }
-  data.spells.map((item)=>{
-    document.getElementById("spells").appendChild(showSpell(item))
-   });
     });
   })
   return container
@@ -117,3 +114,47 @@ function showBook(item) {
 data.books.map((item) => {
   document.getElementById("books").appendChild(showBook(item))
 });
+   function showCharacters(item) {
+    const container = document.createElement('div')
+  
+    let htmln = ` <div id="characters-container${item.id}" class="characters-container">
+    <div class="characters-content">
+    <span class= "characters-close" id="characters-close${item.id}">&times;</span>
+    <h4 class="characters-name">Name: ${item.name}</h4>
+    <p class="characters-description">Birth: ${item.birth}</p>
+    <p class="characters-description">Death: ${item.death}</p>
+    <p class="characters-description">Species: ${item.species}</p>
+    <p class="characters-description">Ancestry: ${item.ancestry}</p>
+    <p class="characters-description">House: ${item.house}</p>
+    <p class="characters-description">Books featured in: ${item.books_featured_in}</p>
+    </div>
+    </div>
+    <button id="btn-characters${item.id}" class="btn-characters">${item.name}</button>
+    `;
+  
+    container.innerHTML = htmln
+    container.querySelector(`#btn-characters${item.id}`).addEventListener('click', (e) => {
+      e.preventDefault()
+  
+      let modal = document.getElementById(`characters-container${item.id}`);
+      modal.style.display = "block";
+  
+      document.getElementById(`characters-close${item.id}`).addEventListener("click", function() {
+        modal.style.display = "none";
+      });
+  
+      window.addEventListener("click", function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        } 
+      });
+    });
+  
+    return container
+  }
+  
+  data.characters.map((item) => {
+    document.getElementById("characters").appendChild(showCharacters(item))
+  });
+  
+  
