@@ -1,9 +1,17 @@
-// estas funciones son de ejemplo
+import data from './data/harrypotter/harryPotter.js';
 
-export const example = () => {
-  return 'example';
-};
+export const charactersHufflepuff = data.characters.filter(function (selectedHouse) {
+  return selectedHouse.house === "Hufflepuff";
+});
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+export const charactersRavenclaw = data.characters.filter(function (selectedHouse) {
+  return selectedHouse.house === "Ravenclaw";
+});
+
+export const charactersGryffindor = data.characters.filter(function (selectedHouse) {
+  return selectedHouse.house === "Gryffindor";
+});
+
+export const charactersSlytherin = data.characters.filter(function (selectedHouse) {
+  return selectedHouse.house === "Slytherin";
+});
