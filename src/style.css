@@ -349,7 +349,7 @@ footer {
 
 .dropdown {
     position: relative;
-    display: block;
+    display: in-block;
     float: right;
 }
 
