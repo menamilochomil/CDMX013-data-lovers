@@ -1,5 +1,3 @@
-//import { example } from './data.js';
-
 import data from './data/harrypotter/harryPotter.js';
 
 function showPotions(item) {
@@ -159,4 +157,22 @@ data.books.map((item) => {
     document.getElementById("characters").appendChild(showCharacters(item))
   });
   
-  
+
+import {charactersHufflepuff, charactersRavenclaw, charactersGryffindor, charactersSlytherin } from './data.js';
+
+
+document.getElementById("hufflepuff").addEventListener("click", function() {
+  console.log(charactersHufflepuff)
+})
+
+document.getElementById("ravenclaw").addEventListener("click", function() {
+  console.log(charactersRavenclaw)
+})
+
+document.getElementById("gryffindor").addEventListener("click", function() {
+  console.log(charactersGryffindor)
+})
+
+document.getElementById("slytherin").addEventListener("click", function() {
+  console.log (charactersSlytherin)
+})
