@@ -344,6 +344,7 @@ footer {
     font-size: 24px;
     border: none;
     cursor: pointer;
+    width: 150px
 }
 
 
@@ -358,7 +359,7 @@ footer {
     position: absolute;
     right: 0;
     background-image: url(./Images/star.jpg);
-    width: 300px;
+    min-width: 1000px;
     box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 8px;
@@ -379,4 +380,10 @@ footer {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+ul {
+  display:flex;
+  justify-content:flex-start;
+  flex-direction: row;
 }
