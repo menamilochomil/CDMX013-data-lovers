@@ -85,7 +85,7 @@ function showBook(item) {
             <div class="book-content">
                 <span class= "book-close" id="book-close${item.id}">&times;</span>
                 <h4 class="book-name">Name: ${item.title}</h4>
-                <p class="book-release-day">Spell Type: ${item.releaseDay}</p>
+                <p class="book-release-day">Release Day: ${item.releaseDay}</p>
                 <p class="book-description">Description: ${item.description}</p><br>
             </div>
         </div>
