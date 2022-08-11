@@ -1,4 +1,4 @@
-//import { example } from './data.js';
+import { filterHuman, filterNotHuman} from './data.js';
 
 import data from './data/harrypotter/harryPotter.js';
 
@@ -158,5 +158,15 @@ data.books.map((item) => {
   data.characters.map((item) => {
     document.getElementById("characters").appendChild(showCharacters(item))
   });
-  
+
+  //let data1= data.characters
+  //const filterHuman= data.characters.filter(item => item.species === "Human");
+
+
+document.getElementById("human-kind").addEventListener("click",() =>
+document.getElementById("characters").innerHTML= filterHuman);
+//console.log(filterHuman));
+ document.getElementById("other-species").addEventListener("click",() =>
+ console.log(filterNotHuman));
+
   
