@@ -131,7 +131,7 @@ data.books.map((item) => {
     <p class="characters-description">Books featured in: ${item.books_featured_in}</p>
     </div>
     </div>
-    <button id="btn-characters${item.id}" class="btn-characters">${item.name}</button>
+    <button id="btn-characters${item.id}" class="btn-characters"><strong>Name:</strong> ${item.name}</button>
     `;
   
     container.innerHTML = htmln
