@@ -174,15 +174,3 @@ function filterCharacters(e) {
 document.querySelectorAll("li").forEach((li)=>{
   li.addEventListener("click", (e) => { filterCharacters(e) });
 })
-
-/*document.getElementById("ravenclaw").addEventListener("click", function() {
-  console.log(charactersRavenclaw)
-})
-
-document.getElementById("gryffindor").addEventListener("click", function() {
-  console.log(charactersGryffindor)
-})
-
-document.getElementById("slytherin").addEventListener("click", function() {
-  console.log (charactersSlytherin)
-})*/
