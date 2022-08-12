@@ -1,5 +1,5 @@
 // estas funciones son de ejemplo
-import data from './data/harrypotter/harryPotter.js';
+
 export const example = () => {
   return 'example';
 };
@@ -7,5 +7,11 @@ export const example = () => {
 export const anotherExample = () => {
   return 'OMG';
 };
-export const filterHuman= data.characters.filter(item => item.species === "Human");
-export const filterNotHuman= data.characters.filter(item => item.species !== "Human");
+export const filterHuman= (arrHuman,species)=>{
+  return arrHuman.filter((item) => item.species === species)
+}
+export const filterNotHuman= (arrHuman,species)=>{
+  return arrHuman.filter((item) => item.species !== species)
+}
+
+//export const humanSort= data.characters.name.sort();
