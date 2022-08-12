@@ -11,7 +11,7 @@ body {
 /* Header*/
 .logo {
     position: relative;
-    z-index: 2;
+    z-index: -1;
     width: 367;
     height: 163;
     margin-left: 40%;
@@ -19,9 +19,9 @@ body {
 }
 .explosion {
     position: absolute;
-    z-index: -100;
-    margin-left: 22rem;
-    height:30rem ;
+    z-index: -10;
+    margin-left: 14rem;
+  
 }
 
 .title {
@@ -362,12 +362,12 @@ footer {
     position: absolute;
     right: 0;
     background-color: rgb(8 31 28);
-    min-width: 200px;
+    min-width: 250px;
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 8px;
     border: solid white;
-    padding-left: 2rem;
+    padding-left: 1rem;
     margin-right: 2.5rem;
 }
 

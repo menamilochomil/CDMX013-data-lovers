@@ -1,3 +1,5 @@
+
+import { charactersFilterHouses, filterHuman, filterNotHuman} from './data.js';
 import data from './data/harrypotter/harryPotter.js';
 
 function showPotions(item) {
@@ -152,16 +154,15 @@ data.books.map((item) => {
     return container
   }
   
-  function printCharacters() {
-    data.characters.map((item) => {
-      document.getElementById("characters").appendChild(showCharacters(item))
-  });
-}
-printCharacters();
-  
-// user story 2
 
-import {charactersFilterHouses} from './data.js';
+ function printCharacter(){ data.characters.map((item) => {
+    document.getElementById("characters").appendChild(showCharacters(item))
+  })}
+
+  printCharacter()
+
+
+// user story 2 houses
 
 function filterCharacters(e) {
   // reconocer el e.target
@@ -174,3 +175,24 @@ function filterCharacters(e) {
 document.querySelectorAll("li").forEach((li)=>{
   li.addEventListener("click", (e) => { filterCharacters(e) });
 })
+
+//Historia 2 species
+
+ function showHuman(e){
+  //Vaciando el grid de characters en el DOM
+  document.getElementById("characters").innerHTML="";
+  //Recorre la función el array resultante de la función filterHuman e inserta cada character en el grid vaciado anteriormente.
+  filterHuman(data.characters, e.target.id).forEach ((item) => document.getElementById("characters").appendChild(showCharacters(item)))
+}
+//Ingresa el evento de escuchar el click y arrojar la función filter en showHuman
+document.getElementById("Human").addEventListener("click", (e) => {showHuman(e)})
+
+function showNotHuman(e){
+  //Vaciando el grid de characters en el DOM
+  document.getElementById("characters").innerHTML="";
+  //Recorre la función el array resultante de la función filterHuman e inserta cada character en el grid vaciado anteriormente.
+  filterNotHuman(data.characters, e.target.className).forEach ((item) => document.getElementById("characters").appendChild(showCharacters(item)))
+}
+document.querySelector(".Human").addEventListener("click", (e) => {showNotHuman(e)})
+
+
