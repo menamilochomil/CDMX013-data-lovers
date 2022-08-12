@@ -157,13 +157,17 @@ data.books.map((item) => {
     document.getElementById("characters").appendChild(showCharacters(item))
   });
   
+  
 
 import {charactersHufflepuff, charactersRavenclaw, charactersGryffindor, charactersSlytherin } from './data.js';
 
+charactersHufflepuff.map((item) =>{
+  document.getElementById("characters").appendChild(showCharacters(item))
+});
 
-document.getElementById("hufflepuff").addEventListener("click", function() {
-  console.log(charactersHufflepuff)
-})
+document.getElementById("hufflepuff").addEventListener("click", charactersHufflepuff.map((item) =>{
+  document.getElementById("characters").appendChild(showCharacters(item))
+}));
 
 document.getElementById("ravenclaw").addEventListener("click", function() {
   console.log(charactersRavenclaw)
