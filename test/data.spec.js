@@ -1,7 +1,7 @@
-import { example, anotherExample } from '../src/data.js';
+import { charactersFilterHouses } from '../src/data.js';
 
 
-describe('example', () => {
+/*describe('example', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
   });
@@ -20,4 +20,10 @@ describe('anotherExample', () => {
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
-});
+});*/
+
+describe('charactersFilterHouses', () => {
+  it ('is a function', () => {
+    expect(typeof charactersFilterHouses).toBe('function');
+  });
+})
