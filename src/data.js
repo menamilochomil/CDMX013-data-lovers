@@ -1,9 +1,6 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
+export const charactersFilterHouses = function (arrData, house) {
+  let filterData = arrData.filter(function (element) {
+    return element.house === house;
+  });
+  return filterData;
+}

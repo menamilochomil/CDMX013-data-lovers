@@ -1,5 +1,3 @@
-//import { example } from './data.js';
-
 import data from './data/harrypotter/harryPotter.js';
 
 function showPotions(item) {
@@ -117,9 +115,9 @@ data.books.map((item) => {
 });
 
    function showCharacters(item) {
-    const container = document.createElement('div')
+    const container = document.createElement('div');
   
-    let htmln = ` <div id="characters-container${item.id}" class="characters-container">
+    container.innerHTML = ` <div id="characters-container${item.id}" class="characters-container">
     <div class="characters-content">
     <span class= "characters-close" id="characters-close${item.id}">&times;</span>
     <h4 class="characters-name">Name: ${item.name}</h4>
@@ -133,8 +131,7 @@ data.books.map((item) => {
     </div>
     <button id="btn-characters${item.id}" class="btn-characters"><strong>Name:</strong> ${item.name}</button>
     `;
-  
-    container.innerHTML = htmln
+    
     container.querySelector(`#btn-characters${item.id}`).addEventListener('click', (e) => {
       e.preventDefault()
   
@@ -155,8 +152,25 @@ data.books.map((item) => {
     return container
   }
   
-  data.characters.map((item) => {
+  function printCharacters() {
+    data.characters.map((item) => {
+      document.getElementById("characters").appendChild(showCharacters(item))
+  });
+}
+printCharacters();
+  
+// user story 2
+
+import {charactersFilterHouses} from './data.js';
+
+function filterCharacters(e) {
+  // reconocer el e.target
+  document.getElementById("characters").innerHTML = "";
+  charactersFilterHouses(data.characters, e.target.id).forEach((item) =>{
     document.getElementById("characters").appendChild(showCharacters(item))
   });
-  
-  
+} 
+
+document.querySelectorAll("li").forEach((li)=>{
+  li.addEventListener("click", (e) => { filterCharacters(e) });
+})
