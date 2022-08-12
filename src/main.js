@@ -155,16 +155,28 @@ data.books.map((item) => {
     return container
   }
   
-  data.characters.map((item) => {
+ function printCharacter(){ data.characters.map((item) => {
     document.getElementById("characters").appendChild(showCharacters(item))
-  });
+  })}
 
-  //let data1= data.characters
-  //const filterHuman= data.characters.filter(item => item.species === "Human");
+  printCharacter()
 
 
-document.getElementById("human-kind").addEventListener("click",() =>
-document.getElementById("characters").innerHTML= filterHuman);
-//console.log(filterHuman));
-document.getElementById("other-species").addEventListener("click",() =>
-console.log(filterNotHuman));
+//Historia 2
+
+ function showHuman(e){
+  //Vaciando el grid de characters en el DOM
+  document.getElementById("characters").innerHTML="";
+  //Recorre la función el array resultante de la función filterHuman e inserta cada character en el grid vaciado anteriormente.
+  filterHuman(data.characters, e.target.id).forEach ((item) => document.getElementById("characters").appendChild(showCharacters(item)))
+}
+//Ingresa el evento de escuchar el click y arrojar la función filter en showHuman
+document.getElementById("Human").addEventListener("click", (e) => {showHuman(e)})
+
+function showNotHuman(e){
+  //Vaciando el grid de characters en el DOM
+  document.getElementById("characters").innerHTML="";
+  //Recorre la función el array resultante de la función filterHuman e inserta cada character en el grid vaciado anteriormente.
+  filterNotHuman(data.characters, e.target.className).forEach ((item) => document.getElementById("characters").appendChild(showCharacters(item)))
+}
+document.querySelector(".Human").addEventListener("click", (e) => {showNotHuman(e)})
