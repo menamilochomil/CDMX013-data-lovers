@@ -166,7 +166,5 @@ data.books.map((item) => {
 document.getElementById("human-kind").addEventListener("click",() =>
 document.getElementById("characters").innerHTML= filterHuman);
 //console.log(filterHuman));
- document.getElementById("other-species").addEventListener("click",() =>
- console.log(filterNotHuman));
-
-  
+document.getElementById("other-species").addEventListener("click",() =>
+console.log(filterNotHuman));

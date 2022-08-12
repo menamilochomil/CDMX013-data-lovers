@@ -11,7 +11,7 @@ body {
 /* Header*/
 .logo {
     position: relative;
-    z-index: 2;
+    z-index: -1;
     width: 367;
     height: 163;
     margin-left: 40%;
@@ -19,9 +19,9 @@ body {
 }
 .explosion {
     position: absolute;
-    z-index: -100;
-    margin-left: 22rem;
-    height:30rem ;
+    z-index: -10;
+    margin-left: 14rem;
+  
 }
 
 .title {
