@@ -27,3 +27,16 @@ describe('charactersFilterHouses', () => {
     expect(typeof charactersFilterHouses).toBe('function');
   });
 })
+
+describe('filterHuman', () => {
+  it('is a function', () => {
+    expect(typeof filterHuman).toBe('function');
+  });
+});
+
+
+describe('filterNotHuman', () => {
+  it('is a function', () => {
+    expect(typeof filterNotHuman).toBe('function');
+  });
+});
