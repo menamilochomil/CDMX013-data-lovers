@@ -1,5 +1,5 @@
 
-import { charactersFilterHouses, filterHuman, filterNotHuman} from './data.js';
+import { charactersFilterHouses, filterHuman, filterNotHuman, sortZA, sortAZ} from './data.js';
 import data from './data/harrypotter/harryPotter.js';
 
 function showPotions(item) {
@@ -161,7 +161,6 @@ data.books.map((item) => {
 
   printCharacter()
 
-
 // user story 2 houses
 
 function filterCharacters(e) {
@@ -209,3 +208,6 @@ document.getElementById("clean-filter").addEventListener("click", () => {
   document.getElementById("calculation").innerHTML = ""
   printCharacter()
 });
+
+console.log(sortZA(data.spells))
+console.log(sortAZ(data.characters))
