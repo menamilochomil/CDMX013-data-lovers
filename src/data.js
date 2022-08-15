@@ -22,4 +22,20 @@ export const filterNotHuman= (arrHuman,species)=>{
   return arrHuman.filter((item) => item.species !== species)
 }
 
-//export const humanSort= data.characters.name.sort();
+export const sortAZ= (arrData)=> arrData.sort((a, b) => {
+    if(a.name< b.name){ 
+      return -1
+    } if (a.name> b.name){
+      return 1
+    }
+      return 0
+  });
+
+  export const sortZA= (arrData)=> arrData.sort((a, b) => {
+    if(a.name< b.name){ 
+      return 1
+    } if (a.name> b.name){
+      return -1
+    }
+      return 0
+  });
