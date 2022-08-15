@@ -162,7 +162,7 @@ background-image: url(./Images/Background/slytherin-green-star.jpg);
 .dropbtn {
     background-color: transparent;
     color: white;
-    padding: 0px 48px 24px 0px;
+    padding: 0px 48px 0px 0px;
     font-size: 24px;
     border: none;
     cursor: pointer;
@@ -197,7 +197,7 @@ background-image: url(./Images/Background/slytherin-green-star.jpg);
     font-size: 18px;
 }
 
-.dropdown-content li:hover {
+.dropdown-content li:hover, .clean-filter:hover {
     background-color: rgba(255, 255, 255, 0.365);
     border-radius: 8px;
 }
@@ -206,7 +206,7 @@ background-image: url(./Images/Background/slytherin-green-star.jpg);
     display: block;
 }
 
-ul {
+ul, .clean-filter {
   display:flex;
   justify-content:flex-start;
   flex-direction: column;
@@ -231,4 +231,13 @@ footer {
 .credit,
 .owners {
   margin-top: 4rem;
+}
+
+.calculation {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  margin-right: 2rem;
+  font-size: 18px;
+  padding: 0 0.5rem 1rem 0;
 }
