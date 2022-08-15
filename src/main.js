@@ -209,6 +209,23 @@ document.getElementById("clean-filter").addEventListener("click", () => {
   printCharacter()
 });
 
+//Sort from A to Z and Z to A for characters
+
+document.getElementById("sort-button-characters").addEventListener("click", () =>{
+  document.getElementById("characters").innerHTML = ""
+  document.getElementById("calculation").innerHTML = ""
+  sortAZ(data.characters).forEach((item) =>{
+    document.getElementById("characters").appendChild(showCharacters(item))
+  })});
+
+document.getElementById("reverse-button-characters").addEventListener("click", () =>{
+  document.getElementById("characters").innerHTML = ""
+  document.getElementById("calculation").innerHTML = ""
+   sortZA(data.characters).forEach((item) =>{
+      document.getElementById("characters").appendChild(showCharacters(item))
+    })});
+  
+//Sort from A to Z and Z to A for spells
 document.getElementById("sort-button-spells").addEventListener("click", () =>{
   document.getElementById("spells").innerHTML = "";
   sortAZ(data.spells).forEach((item) =>{
@@ -222,3 +239,4 @@ document.getElementById("sort-button-spells").addEventListener("click", () =>{
     document.getElementById("spells").appendChild(showSpell(item))
   });
 })
+
