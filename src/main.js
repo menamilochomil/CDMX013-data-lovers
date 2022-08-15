@@ -209,10 +209,6 @@ document.getElementById("clean-filter").addEventListener("click", () => {
   printCharacter()
 });
 
-
-console.log(sortZA(data.spells))
-console.log(sortAZ(data.characters))
-
 document.getElementById("sort-button-spells").addEventListener("click", () =>{
   document.getElementById("spells").innerHTML = "";
   sortAZ(data.spells).forEach((item) =>{
