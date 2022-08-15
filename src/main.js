@@ -209,10 +209,16 @@ document.getElementById("clean-filter").addEventListener("click", () => {
   printCharacter()
 });
 
+document.getElementById("sort-button-spells").addEventListener("click", () =>{
+  document.getElementById("spells").innerHTML = "";
+  sortAZ(data.spells).forEach((item) =>{
+    document.getElementById("spells").appendChild(showSpell(item))
+  });
+})
 
-console.log(sortZA(data.spells))
-console.log(sortAZ(data.characters))
-/*document.getElementById("sort-button-characters").addEventListener("click", () =>{
-  sortAZ(data.characters).forEach((item) =>{
-    document.getElementById("characters").appendChild(showCharacters(item))
-  })});*/
+  document.getElementById("reverse-button-spells").addEventListener("click", () => {
+    document.getElementById("spells").innerHTML = "";
+    sortZA(data.spells).forEach((item) =>{
+    document.getElementById("spells").appendChild(showSpell(item))
+  });
+})
