@@ -238,6 +238,20 @@ footer {
   justify-content: flex-end;
   color: white;
   margin-right: 2rem;
-  font-size: 18px;
-  padding: 0 0.5rem 1rem 0;
+  font-size: 20px;
+  padding: 0 0.5rem 0 0;
+}
+.sort-by {
+color:white;
+font-size: 18px;
+margin: 0 2rem 0 2.5rem;
+}
+.sort-button{
+color: white;
+font-size: 18px;
+background: none;
+border: none;
+}
+.sort-button:hover {
+  color: goldenrod;
 }
