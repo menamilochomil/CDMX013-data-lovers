@@ -240,3 +240,17 @@ document.getElementById("sort-button-spells").addEventListener("click", () =>{
   });
 })
 
+
+document.getElementById("sort-button-potions").addEventListener("click", () =>{
+  document.getElementById("potions").innerHTML = "";
+  sortAZ(data.potions).forEach((item) =>{
+    document.getElementById("potions").appendChild(showPotions(item))
+  });
+})
+
+  document.getElementById("reverse-button-potions").addEventListener("click", () => {
+    document.getElementById("potions").innerHTML = "";
+    sortZA(data.potions).forEach((item) =>{
+    document.getElementById("potions").appendChild(showPotions(item))
+  });
+})
