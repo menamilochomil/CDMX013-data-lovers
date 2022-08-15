@@ -204,5 +204,8 @@ document.querySelector(".Human").addEventListener("click", (e) => {
   document.getElementById("calculation").innerHTML = "There are " + filterNotHuman(data.characters, e.target.className).length + " not humans."
 })
 
-
-console.log (filterHuman(data.characters, "Human").length)
+document.getElementById("clean-filter").addEventListener("click", () => {
+  document.getElementById("characters").innerHTML = ""
+  document.getElementById("calculation").innerHTML = ""
+  printCharacter()
+});
