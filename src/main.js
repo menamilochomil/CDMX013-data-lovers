@@ -225,3 +225,18 @@ document.getElementById("reverse-button-characters").addEventListener("click", (
       document.getElementById("characters").appendChild(showCharacters(item))
     })});
   
+//Sort from A to Z and Z to A for spells
+document.getElementById("sort-button-spells").addEventListener("click", () =>{
+  document.getElementById("spells").innerHTML = "";
+  sortAZ(data.spells).forEach((item) =>{
+    document.getElementById("spells").appendChild(showSpell(item))
+  });
+})
+
+  document.getElementById("reverse-button-spells").addEventListener("click", () => {
+    document.getElementById("spells").innerHTML = "";
+    sortZA(data.spells).forEach((item) =>{
+    document.getElementById("spells").appendChild(showSpell(item))
+  });
+})
+
