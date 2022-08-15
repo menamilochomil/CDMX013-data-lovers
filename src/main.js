@@ -209,10 +209,19 @@ document.getElementById("clean-filter").addEventListener("click", () => {
   printCharacter()
 });
 
+//Sort from A to Z and Z to A for characters
 
-console.log(sortZA(data.spells))
-console.log(sortAZ(data.characters))
-/*document.getElementById("sort-button-characters").addEventListener("click", () =>{
+document.getElementById("sort-button-characters").addEventListener("click", () =>{
+  document.getElementById("characters").innerHTML = ""
+  document.getElementById("calculation").innerHTML = ""
   sortAZ(data.characters).forEach((item) =>{
     document.getElementById("characters").appendChild(showCharacters(item))
-  })});*/
+  })});
+
+document.getElementById("reverse-button-characters").addEventListener("click", () =>{
+  document.getElementById("characters").innerHTML = ""
+  document.getElementById("calculation").innerHTML = ""
+   sortZA(data.characters).forEach((item) =>{
+      document.getElementById("characters").appendChild(showCharacters(item))
+    })});
+  
