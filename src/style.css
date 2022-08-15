@@ -246,12 +246,12 @@ color:white;
 font-size: 18px;
 margin: 0 2rem 0 2.5rem;
 }
-.sort-button{
+.sort-button,  .sort-button-reverse{
 color: white;
 font-size: 18px;
 background: none;
 border: none;
 }
-.sort-button:hover {
+.sort-button:hover, .sort-button-reverse:hover {
   color: goldenrod;
 }

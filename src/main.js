@@ -1,5 +1,5 @@
 
-import { charactersFilterHouses, filterHuman, filterNotHuman, sortZA, sortAZ} from './data.js';
+import { charactersFilterHouses, filterHuman, filterNotHuman,sortZA, sortAZ} from './data.js';
 import data from './data/harrypotter/harryPotter.js';
 
 function showPotions(item) {
@@ -209,5 +209,10 @@ document.getElementById("clean-filter").addEventListener("click", () => {
   printCharacter()
 });
 
+
 console.log(sortZA(data.spells))
 console.log(sortAZ(data.characters))
+/*document.getElementById("sort-button-characters").addEventListener("click", () =>{
+  sortAZ(data.characters).forEach((item) =>{
+    document.getElementById("characters").appendChild(showCharacters(item))
+  })});*/
