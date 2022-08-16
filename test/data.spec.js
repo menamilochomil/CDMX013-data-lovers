@@ -3,10 +3,8 @@ import { charactersFilterHouses, filterHuman, filterNotHuman, sortAZ, sortZA } f
 describe('charactersFilterHouses', () => {
   it ('is a function', () => {
     expect(typeof charactersFilterHouses).toBe('function');
-
-  it ()
   });
-})
+});
 
 describe('filterHuman', () => {
   it('is a function', () => {
