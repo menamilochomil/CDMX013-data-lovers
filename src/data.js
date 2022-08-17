@@ -1,18 +1,5 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
-
 export const charactersFilterHouses = function (arrData, house) {
-  let filterData = arrData.filter(function (element) {
-    return element.house === house;
-  });
-  return filterData;
+  return arrData.filter ((element) => element.house === house);
 }
 
 export const filterHuman= (arrHuman,species)=>{
@@ -23,6 +10,7 @@ export const filterNotHuman= (arrHuman,species)=>{
 }
 
 export const sortAZ= (arrData)=> arrData.sort((a, b) => {
+ //   if(arrData == []) throw(TypeError("Empty array"))
     if(a.name< b.name){ 
       return -1
     } if (a.name> b.name){
@@ -32,10 +20,11 @@ export const sortAZ= (arrData)=> arrData.sort((a, b) => {
   });
 
   export const sortZA= (arrData)=> arrData.sort((a, b) => {
+ //   if(arrData == []) throw(TypeError("Empty array"))
     if(a.name< b.name){ 
       return 1
     } if (a.name> b.name){
       return -1
-    }
+    } 
       return 0
   });
