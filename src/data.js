@@ -1,8 +1,5 @@
 export const charactersFilterHouses = function (arrData, house) {
-  let filterData = arrData.filter(function (element) {
-    return element.house === house;
-  });
-  return filterData;
+  return arrData.filter ((element) => element.house === house);
 }
 
 export const filterHuman= (arrHuman,species)=>{
