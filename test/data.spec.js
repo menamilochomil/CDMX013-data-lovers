@@ -1,4 +1,4 @@
-import { charactersFilterHouses, filterHuman, filterNotHuman, sortAZ, sortZA } from '../src/data.js';
+import { calculus, charactersFilterHouses, filterHuman, filterNotHuman, sortAZ, sortZA, totalStudents } from '../src/data.js';
 //Filter test
 describe('charactersFilterHouses', () => {
   const data= [{"house": "Slytherin"},{"house": "Gryffindor"}]
@@ -69,3 +69,23 @@ describe('sortZA', () => {
     expect(() => sortAZ()).toThrow(TypeError)
   });
 });
+
+describe('totalStudents', () => {
+  const data =[{ "house": "Gryffindor"}, {"house": "Ravenclaw"}, { "house": null}, {"house": "House of Black"}];
+  it ('should return 2', () => {
+    expect(totalStudents(data)).toBe(2)
+  });
+  it ('should not return 4', () => {
+    expect(totalStudents(data)).not.toBe(4)
+  });
+})
+
+describe('calculus', () => {
+  const data = [{ "house": "Gryffindor"}, {"house": "Ravenclaw"}, { "house": null}, {"house": "House of Black"}];
+  it ('should return 2', () => {
+    expect(calculus(data, "Gryffindor")).toBe(50)
+  });
+  it ('should not return 0', () => {
+    expect(calculus(data,"Ravenclaw")).not.toBe(0)
+  });
+})
