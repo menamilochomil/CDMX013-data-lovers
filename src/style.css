@@ -266,6 +266,7 @@ input.search-bar{
   border-radius: 6px;
   background-color: #ffffff68;
   width: 50rem;
+  color:white
   
 }
 input::placeholder {
