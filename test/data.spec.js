@@ -9,8 +9,11 @@ describe('charactersFilterHouses', () => {
     expect(typeof charactersFilterHouses).toBe('function');
   });
   it('should filter by houses NOT', () => {
-    expect(filterHuman(data,"Gryffindor")).not.toHaveLength(2)
+    expect(charactersFilterHouses(data,"Gryffindor")).not.toHaveLength(2)
   });
+    it('should filter by houses', () => {
+      expect(charactersFilterHouses(data,"Gryffindor")).toStrictEqual([{ "house": "Gryffindor"}])
+    });
 });
 
 describe('filterHuman', () => {
