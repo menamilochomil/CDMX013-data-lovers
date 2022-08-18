@@ -255,3 +255,30 @@ border: none;
 .sort-button:hover, .sort-button-reverse:hover {
   color: goldenrod;
 }
+/*Search Bar and button styles*/
+.search{
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+input.search-bar{
+  border:rgba(0, 0, 0, 0.747);
+  border-radius: 6px;
+  background-color: #ffffff68;
+  width: 50rem;
+  
+}
+input::placeholder {
+  color: white;
+
+}
+.owl-btn, .owl{
+border: none;
+background-color: #fefefe2b;
+border-radius: 8px;
+width: 2rem;
+height: 2rem;
+}
+.owl-btn:hover{
+  box-shadow: 0 12px 16px 0 rgb(225, 155, 46), 0 17px 50px 0 rgb(225, 155, 46);
+}
