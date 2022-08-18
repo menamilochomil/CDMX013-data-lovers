@@ -1,5 +1,5 @@
 
-import { charactersFilterHouses, filterHuman, filterNotHuman,sortZA, sortAZ} from './data.js';
+import { charactersFilterHouses, filterHuman, filterNotHuman,sortZA, sortAZ, calculus, totalStudents} from './data.js';
 import data from './data/harrypotter/harryPotter.js';
 
 function showPotions(item) {
@@ -174,7 +174,7 @@ function filterCharacters(e) {
 document.querySelectorAll("li").forEach((li)=>{
   li.addEventListener("click", (e) => { 
     filterCharacters(e) 
-    document.getElementById("calculation").innerHTML ="Out of 144 students, " + parseInt((charactersFilterHouses(data.characters, e.target.id).length*100/144)) + "% are in " + e.target.id + " house."
+    document.getElementById("calculation").innerHTML ="Out of " + totalStudents(data.characters) +" students, " + calculus(data.characters, e.target.id) + "% are in " + e.target.id + " house.";
   });
 })
 

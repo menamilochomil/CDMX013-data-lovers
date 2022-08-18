@@ -28,3 +28,15 @@ export const sortAZ= (arrData)=> arrData.sort((a, b) => {
     } 
       return 0
   });
+
+  export const totalStudents = (arrData)=>{
+    let total = (charactersFilterHouses(arrData, "Hufflepuff").length) + (charactersFilterHouses(arrData, "Ravenclaw").length)+ (charactersFilterHouses(arrData, "Slytherin").length)+ (charactersFilterHouses(arrData, "Gryffindor").length);
+    return total;
+  }
+
+  export const calculus = (arrData, input)=>{
+    totalStudents (arrData)
+    let percentage = parseInt((charactersFilterHouses(arrData, input).length*100/totalStudents(arrData)));
+    return percentage;
+
+  }
