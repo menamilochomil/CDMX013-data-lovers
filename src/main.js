@@ -255,8 +255,9 @@ document.getElementById("sort-button-potions").addEventListener("click", () =>{
   });
 })
 
+//search bar for  potions section
+
 let searchPotions = document.getElementById("search-potions")
-//let searchPotionsButton = document.getElementById("search-potions-button")
 let potionsForm = document.getElementById("search-potions-form")
 
 function searchPotionsResult() {
