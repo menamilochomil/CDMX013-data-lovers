@@ -42,5 +42,6 @@ export const sortAZ= (arrData)=> arrData.sort((a, b) => {
   }
 
   export const searchName = (arrData, input) => {
-    return arrData.filter ((item) => item.name.toLowerCase() === input.toLowerCase());
+    return arrData.filter ((item) => (item.name.toLowerCase()).slice(0,(input.toLowerCase()).length) === input.toLowerCase())
+    ;
   }
