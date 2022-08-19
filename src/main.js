@@ -276,3 +276,32 @@ potionsForm.addEventListener("keyup", (e) =>{
   e.preventDefault();
   searchPotionsResult();
 })*/
+// search bar of characters section
+
+let searchCharacters = document.getElementById("search-characters")
+let charactersForm = document.getElementById("search-characters-form")
+
+function searchCharactersResult() {
+  document.getElementById("characters").innerHTML = "";
+  searchName(data.characters,searchCharacters.value).forEach((item) => {
+  document.getElementById("characters").appendChild(showCharacters(item))
+  });
+}
+charactersForm.addEventListener("submit", (e) =>{
+  e.preventDefault();
+  searchCharactersResult();
+})
+// search bar of spells section
+let searchSpells = document.getElementById("search-spells")
+let spellsForm = document.getElementById("search-spells-form")
+
+function searchSpellsResult() {
+  document.getElementById("spells").innerHTML = "";
+  searchName(data.spells,searchSpells.value).forEach((item) => {
+  document.getElementById("spells").appendChild(showSpell(item))
+  });
+}
+spellsForm.addEventListener("submit", (e) =>{
+  e.preventDefault();
+  searchSpellsResult();
+})
