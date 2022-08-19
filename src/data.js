@@ -40,3 +40,7 @@ export const sortAZ= (arrData)=> arrData.sort((a, b) => {
     return percentage;
 
   }
+
+  export const searchName = (arrData, input) => {
+    return arrData.filter ((item) => item.name.toLowerCase() === input.toLowerCase());
+  }
