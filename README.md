@@ -6,7 +6,7 @@ Comenzamos hablando sobre cómo podríamos implementar la página según los req
 
 A continuación se muestra el prototipo de baja fidelidad diseñado:
 
-[!IMG_2878.jpg] (./ImagesReadme/IMG_2878.jpg)
+[!IMG_2878.jpg] (/ImagesReadme/IMG_2878.jpg)
 
 
 Posterior a eso, se hizo uso de Figma para maquetar el prototipo de alta fidelidad resultando en las siguientes imágenes:
