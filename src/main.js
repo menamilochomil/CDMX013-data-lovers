@@ -270,3 +270,9 @@ potionsForm.addEventListener("submit", (e) =>{
   e.preventDefault();
   searchPotionsResult();
 })
+
+/*
+potionsForm.addEventListener("keyup", (e) =>{
+  e.preventDefault();
+  searchPotionsResult();
+})*/
