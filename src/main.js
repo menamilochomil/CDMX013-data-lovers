@@ -1,5 +1,5 @@
 
-import { charactersFilterHouses, filterHuman, filterNotHuman,sortZA, sortAZ, calculus, totalStudents} from './data.js';
+import { charactersFilterHouses, filterHuman, filterNotHuman,sortZA, sortAZ, calculus, totalStudents, searchName} from './data.js';
 import data from './data/harrypotter/harryPotter.js';
 
 function showPotions(item) {
@@ -253,4 +253,19 @@ document.getElementById("sort-button-potions").addEventListener("click", () =>{
     sortZA(data.potions).forEach((item) =>{
     document.getElementById("potions").appendChild(showPotions(item))
   });
+})
+
+let searchPotions = document.getElementById("search-potions")
+//let searchPotionsButton = document.getElementById("search-potions-button")
+let potionsForm = document.getElementById("search-potions-form")
+
+function searchPotionsResult() {
+  document.getElementById("potions").innerHTML = "";
+  searchName(data.potions,searchPotions.value).forEach((item) => {
+  document.getElementById("potions").appendChild(showPotions(item))
+  });
+}
+potionsForm.addEventListener("submit", (e) =>{
+  e.preventDefault();
+  searchPotionsResult();
 })
