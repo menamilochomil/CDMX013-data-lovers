@@ -1,4 +1,4 @@
-import { calculus, charactersFilterHouses, filterHuman, filterNotHuman, sortAZ, sortZA, totalStudents } from '../src/data.js';
+import { calculus, charactersFilterHouses, filterHuman, filterNotHuman, sortAZ, sortZA, totalStudents, searchName } from '../src/data.js';
 //Filter test
 describe('charactersFilterHouses', () => {
   const data= [{"house": "Slytherin"},{"house": "Gryffindor"}]
@@ -92,3 +92,11 @@ describe('calculus', () => {
     expect(calculus(data,"Ravenclaw")).not.toBe(0)
   });
 })
+
+//test for search fuction
+describe('filter by searchName', () => {
+  const data= [{"name": "Euan Abercrombie"}]
+    it('should search by name', () => {
+      expect(searchName(data,"Euan")).toStrictEqual([{ "name": "Euan Abercrombie"}])
+    });
+});
