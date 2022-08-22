@@ -3,13 +3,19 @@ import data from './data/harrypotter/harryPotter.js';
 
 document.getElementById("characters-first-view").addEventListener("click", () =>{
   document.getElementById("first-view").style.display = "none";
-  if(document.getElementById("characters").style.display == "none"){
-       document.getElementById("characters").style.display="block";
-    } else {
-      document.getElementById("characters").style.display="none";
+  document.getElementById("characters-appear").style.display="block";
     }
-  // document.getElementById("characters").style.display= "flex";
-})
+)
+document.getElementById("spells-first-view").addEventListener("click", () =>{
+  document.getElementById("first-view").style.display = "none";
+  document.getElementById("spells-appear").style.display="block";
+    }
+)
+document.getElementById("potions-first-view").addEventListener("click", () =>{
+  document.getElementById("first-view").style.display = "none";
+  document.getElementById("potions-appear").style.display="block";
+    }
+)
 
 //buttonCharacters.addEventListener("click", appearCharacters)
 
