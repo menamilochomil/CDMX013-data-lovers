@@ -175,8 +175,16 @@ document.querySelectorAll("li").forEach((li)=>{
   li.addEventListener("click", (e) => { 
     filterCharacters(e) 
     document.getElementById("calculation").innerHTML ="Out of " + totalStudents(data.characters) +" students, " + calculus(data.characters, e.target.id) + "% are in " + e.target.id + " house.";
+    //user story 5: filter/sort
+    document.getElementById("reverse-button-characters").addEventListener("click", () =>{
+      sortZA(filterCharacters(e))
+     }); 
+     document.getElementById("sort-button-characters").addEventListener("click", () =>{
+      sortAZ(filterCharacters(e))
+    });
   });
 })
+
 
 //Historia 2 species
 
@@ -190,6 +198,13 @@ document.querySelectorAll("li").forEach((li)=>{
 document.getElementById("Human").addEventListener("click", (e) => {
   showHuman(e)
   document.getElementById("calculation").innerHTML = "There are " + filterHuman(data.characters, e.target.id).length + " humans."
+   //user story 5: filter/sort
+   document.getElementById("reverse-button-characters").addEventListener("click", () =>{
+    sortZA(showHuman(e))
+   }); 
+   document.getElementById("sort-button-characters").addEventListener("click", () =>{
+    sortAZ(showHuman(e))
+  });
 })
 
 function showNotHuman(e){
@@ -201,6 +216,13 @@ function showNotHuman(e){
 document.querySelector(".Human").addEventListener("click", (e) => {
   showNotHuman(e)
   document.getElementById("calculation").innerHTML = "There are " + filterNotHuman(data.characters, e.target.className).length + " not humans."
+   //user story 5: filter/sort
+   document.getElementById("reverse-button-characters").addEventListener("click", () =>{
+    sortZA(showNotHuman(e))
+   }); 
+   document.getElementById("sort-button-characters").addEventListener("click", () =>{
+    sortAZ(showNotHuman(e))
+  });
 })
 
 document.getElementById("clean-filter").addEventListener("click", () => {
