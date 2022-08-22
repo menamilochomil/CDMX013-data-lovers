@@ -374,9 +374,3 @@ height: 2rem;
 .characters, .spells, .potions {
   display: none;
 }
-
-.fun-facts {
-  font-size: 24px;
-  width: auto;
-  margin: 5rem auto 2rem 4rem;
-}
