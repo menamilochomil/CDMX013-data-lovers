@@ -20,7 +20,7 @@ body {
 }
 
 .title {
-    display: none;
+    display: flex;
     justify-content: left;
     padding: 2rem;
     margin-top: 50px;
@@ -47,12 +47,11 @@ body {
     width: 95%;
     border: 0.5rem solid black;
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(5, 19%);
     gap: 1rem 1rem;
     overflow: auto;
     align-items: stretch;
 }
-
 #characters{
   background-image: url(./Images/Background/slytherin-green-star.jpg);
 }
@@ -65,11 +64,6 @@ body {
 #books{
   background-image: url(./Images/Background/hufflepuff-background-2200.jpg);
   height: 18rem;
-  width: 75rem;
-  grid-template-columns: repeat(4, 20%);
-  justify-content: center;
-  align-items: center;
-  margin: 0 10rem 4rem 10rem;
 }
 
 /* Name of the characters,spells, books and potions as a button*/
@@ -309,6 +303,7 @@ height: 2rem;
 .owl-btn:hover{
   box-shadow: 0 12px 16px 0 rgb(225, 155, 46), 0 17px 50px 0 rgb(225, 155, 46);
 }
+<<<<<<< HEAD
 
 /*First view*/
 /* #first-view{
