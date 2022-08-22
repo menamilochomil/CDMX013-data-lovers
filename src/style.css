@@ -11,7 +11,7 @@ body {
 /* Header*/
 .logo {
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     width: 30%;
     max-width: 367px;
    /*  height: 163; */
@@ -371,7 +371,7 @@ height: 2rem;
   cursor: pointer;
 }
 
-.characters, .spells, .potions {
+#characters-appear, #spells-appear, #potions-appear {
   display: none;
 }
 
@@ -379,4 +379,29 @@ height: 2rem;
   font-size: 24px;
   width: auto;
   margin: 5rem auto 2rem 4rem;
+}
+
+.back-arrow{
+  color:white;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  margin: 5rem auto 1rem 2rem;
+  width: 10rem;
+
+}
+.back-arrow:hover{
+  color:#514A92;
+  cursor: pointer;
+}
+
+.arrow-img{
+  width:2rem;
+  height: auto;
+}
+
+h3{
+  text-align: center;
+  margin-right: 2rem;
 }
