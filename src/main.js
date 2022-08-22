@@ -1,26 +1,15 @@
-
 import { charactersFilterHouses, filterHuman, filterNotHuman, sortZA, sortAZ, calculus, totalStudents, searchName } from './data.js';
 import data from './data/harrypotter/harryPotter.js';
 
-const buttonCharacters= document.getElementById("characters-first-view");
-/* const buttonSpells= document.getElementById("spells-first-view").value;
-const buttonPotions=document.getElementById("potions-first-view").value; */
-const firstDisappear=document.getElementById("first-view");
-const characterAppear= document.getElementById("characters");
-
-
-// function appearCharacters(){
-//   if(characterAppear.style.display === "none"){
-//     firstDisappear.style.display="none";
-//     characterAppear.style.display="block";
-//   }  else{
-//     characterAppear.style.display="none"
-//   }
-// }
-buttonCharacters.addEventListener("click", () => 
-    characterAppear.style.display="block"
-)
-
+document.getElementById("characters-first-view").addEventListener("click", () =>{
+  document.getElementById("first-view").style.display = "none";
+  if(document.getElementById("characters").style.display == "none"){
+       document.getElementById("characters").style.display="block";
+    } else {
+      document.getElementById("characters").style.display="none";
+    }
+  // document.getElementById("characters").style.display= "flex";
+})
 
 //buttonCharacters.addEventListener("click", appearCharacters)
 
@@ -360,24 +349,42 @@ let funFacts= data.funFacts.splice(3,(data.funFacts).length);
 let randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
 document.getElementById("fun-facts").innerHTML = "Fun fact: " + randomFact.content
 
-/*calling variables for  */
 
-const buttonCharacters= document.getElementById("characters-first-view");
-/* const buttonSpells= document.getElementById("spells-first-view").value;
-const buttonPotions=document.getElementById("potions-first-view").value; */
-const firstDisappear=document.getElementById("first-view");
-const characterAppear= document.getElementById("characters");
-
-
-function appearCharacters(){
-  if(characterAppear.style.display === "none"){
-    firstDisappear.style.display="none";
-    characterAppear.style.display="block";
-  }  else{
-    characterAppear.style.display="none"
-  }
-}
-buttonCharacters.addEventListener("click", appearCharacters)
+//const buttonCharacters= document.getElementById("characters-first-view");
+// /* const buttonSpells= document.getElementById("spells-first-view").value;
+// const buttonPotions=document.getElementById("potions-first-view").value; */
+// const firstDisappear=document.getElementById("first-view");
+// const characterAppear= document.getElementById("characters");
 
 
-//buttonCharacters.addEventListener("click", appearCharacters)
+// function appearCharacters(){
+//   if(characterAppear.style.display === "none"){
+//     firstDisappear.style.display="none";
+//     characterAppear.style.display="block";
+//   }  else{
+//     characterAppear.style.display="none"
+//   }
+// }
+
+
+// /*calling variables for  */
+
+// const buttonCharacters= document.getElementById("characters-first-view");
+// /* const buttonSpells= document.getElementById("spells-first-view").value;
+// const buttonPotions=document.getElementById("potions-first-view").value; */
+// const firstDisappear=document.getElementById("first-view");
+// const characterAppear= document.getElementById("characters");
+
+
+// function appearCharacters(){
+//   if(characterAppear.style.display === "none"){
+//     firstDisappear.style.display="none";
+//     characterAppear.style.display="block";
+//   }  else{
+//     characterAppear.style.display="none"
+//   }
+// }
+// buttonCharacters.addEventListener("click", appearCharacters)
+
+
+// //buttonCharacters.addEventListener("click", appearCharacters)
