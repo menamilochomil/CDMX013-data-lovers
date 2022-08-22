@@ -1,7 +1,24 @@
-
-import { charactersFilterHouses, filterHuman, filterNotHuman,sortZA, sortAZ, calculus, totalStudents, searchName} from './data.js';
+import { charactersFilterHouses, filterHuman, filterNotHuman, sortZA, sortAZ, calculus, totalStudents, searchName } from './data.js';
 import data from './data/harrypotter/harryPotter.js';
 
+//Adding hide and appear function
+document.getElementById("characters-first-view").addEventListener("click", () =>{
+  document.getElementById("first-view").style.display = "none";
+  document.getElementById("characters-appear").style.display="block";
+    }
+)
+document.getElementById("spells-first-view").addEventListener("click", () =>{
+  document.getElementById("first-view").style.display = "none";
+  document.getElementById("spells-appear").style.display="block";
+    }
+)
+document.getElementById("potions-first-view").addEventListener("click", () =>{
+  document.getElementById("first-view").style.display = "none";
+  document.getElementById("potions-appear").style.display="block";
+    }
+)
+
+//Starting with other fucntions
 function showPotions(item) {
   const container = document.createElement('div')
 
@@ -164,7 +181,7 @@ data.books.map((item) => {
 // user story 2 houses
 
 function filterCharacters(e) {
-  // reconocer el e.target
+  // recognize the target
   document.getElementById("characters").innerHTML = "";
   charactersFilterHouses(data.characters, e.target.id).forEach((item) =>{
     document.getElementById("characters").appendChild(showCharacters(item))
@@ -186,10 +203,10 @@ document.querySelectorAll("li").forEach((li)=>{
 })
 
 
-//Historia 2 species
+//user 2 species
 
  function showHuman(e){
-  //Vaciando el grid de characters en el DOM
+  //cleaning the grid of characters in DOM
   document.getElementById("characters").innerHTML="";
   //Recorre la función el array resultante de la función filterHuman e inserta cada character en el grid vaciado anteriormente.
   filterHuman(data.characters, e.target.id).forEach ((item) => document.getElementById("characters").appendChild(showCharacters(item)))
@@ -326,4 +343,11 @@ function searchSpellsResult() {
 spellsForm.addEventListener("submit", (e) =>{
   e.preventDefault();
   searchSpellsResult();
+
 })
+
+//random fun fact on load
+
+let funFacts= data.funFacts.splice(3,(data.funFacts).length);
+let randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+document.getElementById("fun-facts").innerHTML = "Fun fact: " + randomFact.content
