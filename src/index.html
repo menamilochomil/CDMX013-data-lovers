@@ -9,7 +9,7 @@
 
 <body>
   <header class="title-image">
-    <img class="logo" src="./Images/logo.png" alt="logo">
+    <a id="logo" href="index.html"><img class="logo" src="./Images/logo.png" alt="logo"></a>
     <h1 class="title"> Harry Potter: characters and more...</h1><br>
   </header>
 
@@ -36,8 +36,10 @@
     
     <button id="potions-first-view">Potions</button>
   </div>
-    <section class="characters">
-      <h3 class="header-character">Characters' info</h3>
+    <section class="characters" id="characters-appear">
+      <a href="index.html" class="back-arrow"><img src="./Images/back-arrow-HP.png" alt="arrow" class="arrow-img">
+        Back</a>
+      <h3 class="header-character">Characters</h3>
       <form role="search" id="search-characters-form">
         <div class="search">
           <input type="search" id="search-characters" class="search-bar" name="q"
@@ -122,7 +124,7 @@
       <div id="characters" class="grid-space">
       </div>
     </section><br>
-    <section class="spells">
+    <section class="spells" id="spells-appear">
       <h3 class="header-spells">Spells' info</h3><br>
       <form role="search" id="search-spells-form">
         <div class="search">
@@ -139,7 +141,7 @@
       <div id="spells"  class="grid-space">
       </div>
     </section><br>
-    <section class="potions">
+    <section class="potions" id="potions-appear">
       <h3 class="header-potions">Potions' info</h3><br>
       <form role="search" id="search-potions-form">
         <div class="search">
