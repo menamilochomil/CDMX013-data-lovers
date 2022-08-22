@@ -335,5 +335,5 @@ spellsForm.addEventListener("submit", (e) => {
 //random fun fact on load
 
 let funFacts= data.funFacts.splice(3,(data.funFacts).length);
-let fact = funFacts[Math.floor(Math.random() * funFacts.length)];
-document.getElementById("fun-facts").innerHTML = fact.content 
+let randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+document.getElementById("fun-facts").innerHTML = "Fun fact: " + randomFact.content
