@@ -6,6 +6,7 @@
 
 body {
     background-image: url(./Images/star.jpg);
+    color:white;
 }
 
 /* Header*/
@@ -20,7 +21,7 @@ body {
 }
 
 .title {
-    display: flex;
+    display: none;
     justify-content: left;
     padding: 2rem;
     margin-top: 50px;
@@ -64,6 +65,11 @@ body {
 #books{
   background-image: url(./Images/Background/hufflepuff-background-2200.jpg);
   height: 18rem;
+  width: 80rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8rem;
+  grid-template-columns: repeat(4, 22%);
 }
 
 /* Name of the characters,spells, books and potions as a button*/
@@ -303,16 +309,12 @@ height: 2rem;
 .owl-btn:hover{
   box-shadow: 0 12px 16px 0 rgb(225, 155, 46), 0 17px 50px 0 rgb(225, 155, 46);
 }
-<<<<<<< HEAD
 
 /*First view*/
-/* #first-view{
-  display: none;
-} */
+
 .fun-facts{
   color: white;
 }
-
 
 #characters-first-view{
   background-image: url(./Images/Background/map.jpg);
@@ -332,6 +334,7 @@ height: 2rem;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 #spells-p{
@@ -351,7 +354,7 @@ height: 2rem;
 }
 
 #potions-first-view{
-  background-image: url(./Images/Background/potions-bck.jpeg);
+  background-image: url(./Images/Background/potions-back.jpeg);
   width: 75rem;
   height: 25rem;
   margin: 2rem 10rem;
@@ -399,4 +402,8 @@ height: 2rem;
 h3{
   text-align: center;
   margin-right: 2rem;
+}
+
+h3.header-books {
+  text-align: start;
 }
