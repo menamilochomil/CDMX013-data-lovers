@@ -10,13 +10,12 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 1200px) {}
 
 /* Header*/
 .logo {
   width: 25rem;
   max-width: 23rem;
-  margin-left: 30rem;
+  margin-left: 40%;
   margin-top: 3rem;
 }
 
@@ -72,7 +71,7 @@ body {
 #books {
   background-image: url(./Images/Background/hufflepuff-background-2200.jpg);
   height: 18rem;
-  margin: 2rem 0 2rem 5rem;
+  margin: 2rem 0 2rem 13%;
   grid-template-columns: repeat(4, 22%);
   width: 70rem;
 }
@@ -353,15 +352,11 @@ input::placeholder {
 
 /*First view*/
 
-.fun-facts {
-  color: white;
-}
-
 #characters-first-view {
   background-image: url(./Images/Background/map.jpg);
   width: 44rem;
   height: 29rem;
-  margin: 2rem 15rem;
+  margin: 2rem 0 2rem 29%;
   font-size: 80px;
   border: none;
   color: rgb(116, 25, 26);
@@ -398,7 +393,7 @@ input::placeholder {
   background-image: url(./Images/Background/potions-back.jpeg);
   width: 70rem;
   height: 25rem;
-  margin: 2rem 0 2rem 5rem;
+  margin: 2rem 0 2rem 13%;
   font-size: 80px;
   border: none;
   color: white;
@@ -421,8 +416,9 @@ input::placeholder {
 
 .fun-facts {
   font-size: 24px;
-  width: 70rem;
-  margin: 5rem 0 2rem 4rem;
+  width: 90%;
+  margin: 5rem 0 2rem 5%;
+  color: white;
 }
 
 .back-arrow {
