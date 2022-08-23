@@ -71,9 +71,9 @@ body {
 #books {
   background-image: url(./Images/Background/hufflepuff-background-2200.jpg);
   height: 18rem;
-  margin: 2rem 0 2rem 13%;
+  margin: 2rem 0 2rem 10%;
   grid-template-columns: repeat(4, 22%);
-  width: 70rem;
+  width: 80%;
 }
 
 /* Name of the characters,spells, books and potions as a button*/
@@ -354,9 +354,9 @@ input::placeholder {
 
 #characters-first-view {
   background-image: url(./Images/Background/map.jpg);
-  width: 44rem;
-  height: 29rem;
-  margin: 2rem 0 2rem 29%;
+  width: 700px ;
+  height: 464px;
+  margin: 2rem 0 2rem 25%;
   font-size: 80px;
   border: none;
   color: rgb(116, 25, 26);
@@ -391,9 +391,9 @@ input::placeholder {
 
 #potions-first-view {
   background-image: url(./Images/Background/potions-back.jpeg);
-  width: 70rem;
+  width: 80%;
   height: 25rem;
-  margin: 2rem 0 2rem 13%;
+  margin: 2rem 0 2rem 10%;
   font-size: 80px;
   border: none;
   color: white;
