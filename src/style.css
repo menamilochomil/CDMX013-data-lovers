@@ -22,11 +22,6 @@ body {
 
 .title {
     display: none;
-    justify-content: left;
-    padding: 2rem;
-    margin-top: 50px;
-    color: aliceblue;
-    font-size: 48px;
 }
 
 /*main*/
@@ -34,7 +29,6 @@ body {
 .header-spells,
 .header-books,
 .header-potions {
-    color: white;
     font-size: 36px;
     padding: 1%;
 }
@@ -43,7 +37,6 @@ body {
 #characters, #spells, #potions, #books {
     margin-left: 2rem;
     padding: 1%;
-    color: white;
     height: 30rem;
     width: 95%;
     border: 0.5rem solid black;
@@ -150,7 +143,6 @@ background-image: url(./Images/Background/slytherin-green-star.jpg);
 
  /*The Close Button*/
 .characters-close, .spell-close, .book-close, .potions-close {
-  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -171,7 +163,6 @@ background-image: url(./Images/Background/slytherin-green-star.jpg);
 .characters-name, .spell-name, .book-name, .potions-name  {
   padding: 2px 16px;
   background-color: #ffffff40;
-  color: white;
   height: 2rem;
   border-radius: 8px 8px 0px 0px;
 }
@@ -181,7 +172,6 @@ background-image: url(./Images/Background/slytherin-green-star.jpg);
 .book-release-day, 
 .book-description, .potions-description  {
   padding: 2px 16px;
-  color: white; 
 }
 
 /*dropdown menu*/
@@ -243,7 +233,6 @@ ul, .clean-filter {
 /*Footer*/
 footer {
   background-image: url(./Images/Background/footer.jpg);
-  color: white;
   height: 6rem;
 }
 
@@ -262,7 +251,6 @@ footer {
 .calculation {
   display: flex;
   justify-content: flex-end;
-  color: white;
   margin-right: 2rem;
   font-size: 20px;
   padding: 0 0.5rem 0 0;
@@ -399,11 +387,11 @@ height: 2rem;
   height: auto;
 }
 
-h3{
+h2{
   text-align: center;
   margin-right: 2rem;
 }
 
-h3.header-books {
+h2.header-books {
   text-align: start;
 }
