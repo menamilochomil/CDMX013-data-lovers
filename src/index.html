@@ -14,36 +14,40 @@
   </header>
 
   <main class="main">
-  <div id="first-view">
-    <section class="fun-facts">
-      <p id="fun-facts">Fun fact:</p>
-    </section>
-   
-    <button id="characters-first-view">Get to know the characters</button>
-   
-    <section class="books">
-      <h3 class="header-books">Books</h3>
-      <br>
-      <div id="books">
+<!--First view of this page--> 
+    <div id="first-view">
+      <section class="fun-facts">
+        <p id="fun-facts">Fun fact:</p>
+      </section>
+<!--Button to characters section-->
+      <button id="characters-first-view">Get to know the characters</button>
+
+      <section class="books">
+        <h2 class="header-books">Books</h2>
+        <br>
+        <div id="books">
+        </div>
+      </section>
+
+<!--Button to spells section-->
+      <div class="spells-first-view">
+        <img src="./Images/images.ctfassets.png" alt="patronus">
+        <p id="spells-p">Spells are a big part of the wizarding world. </p>
+        <button id="spells-first-view">Learn more about spells</button>
       </div>
-    </section>
-    
-    <div class="spells-first-view">
-      <img src="./Images/images.ctfassets.png" alt="patronus">
-      <p id="spells-p">Spells are a big part of the wizarding world. </p>
-      <button id="spells-first-view">Learn more about spells</button>
+
+<!--Button to potions section-->
+      <button id="potions-first-view">Potions</button>
     </div>
-    
-    <button id="potions-first-view">Potions</button>
-  </div>
+
+<!--Second view to characters section-->   
     <section class="characters" id="characters-appear">
       <a href="index.html" class="back-arrow"><img src="./Images/back-arrow-HP.png" alt="arrow" class="arrow-img">
         Back</a>
-      <h3 class="header-character">Characters</h3>
+      <h2 class="header-character">Characters</h2>
       <form role="search" id="search-characters-form">
         <div class="search">
-          <input type="search" id="search-characters" class="search-bar" name="q"
-          placeholder="Search…" size="30">
+          <input type="search" id="search-characters" class="search-bar" name="q" placeholder="Search…" size="30">
           <button id="search-character-btn" class="owl-btn"> <img class="owl" src="./Images/owl.png" alt="owl"></button>
         </div>
       </form>
@@ -117,21 +121,22 @@
       <br><br>
       <p id="calculation" class="calculation"></p>
       <div class="sort-by">
-      <button class="sort-button" id="sort-button-characters" >A-Z</button>
-      /
-      <button class="sort-button-reverse" id="reverse-button-characters">Z-A</button>
+        <button class="sort-button" id="sort-button-characters">A-Z</button>
+        /
+        <button class="sort-button-reverse" id="reverse-button-characters">Z-A</button>
       </div>
       <div id="characters" class="grid-space">
       </div>
     </section><br>
+
+<!--Second view to spells section--> 
     <section class="spells" id="spells-appear">
       <a href="index.html" class="back-arrow"><img src="./Images/back-arrow-HP.png" alt="arrow" class="arrow-img">
         Back</a>
-      <h3 class="header-spells">Spells</h3><br>
+      <h2 class="header-spells">Spells</h2><br>
       <form role="search" id="search-spells-form">
         <div class="search">
-          <input type="search" id="search-spells" class="search-bar" name="q"
-          placeholder="Search…" size="30">
+          <input type="search" id="search-spells" class="search-bar" name="q" placeholder="Search…" size="30">
           <button id="search-spells-btn" class="owl-btn"> <img class="owl" src="./Images/owl.png" alt="owl"></button>
         </div>
       </form>
@@ -139,18 +144,19 @@
         <button class="sort-button" id="sort-button-spells">A-Z</button>
         /
         <button class="sort-button-reverse" id="reverse-button-spells">Z-A</button>
-        </div>
-      <div id="spells"  class="grid-space">
+      </div>
+      <div id="spells" class="grid-space">
       </div>
     </section><br>
+
+<!--Second view to potions section--> 
     <section class="potions" id="potions-appear">
       <a href="index.html" class="back-arrow"><img src="./Images/back-arrow-HP.png" alt="arrow" class="arrow-img">
         Back</a>
-      <h3 class="header-potions">Potions</h3><br>
+      <h2 class="header-potions">Potions</h2><br>
       <form role="search" id="search-potions-form">
         <div class="search">
-          <input type="search" id="search-potions" class="search-bar" name="q"
-          placeholder="Search…" size="30">
+          <input type="search" id="search-potions" class="search-bar" name="q" placeholder="Search…" size="30">
           <button id="search-potions-btn" class="owl-btn"> <img class="owl" src="./Images/owl.png" alt="owl"></button>
         </div>
       </form>
@@ -158,12 +164,13 @@
         <button class="sort-button" id="sort-button-potions">A-Z</button>
         /
         <button class="sort-button-reverse" id="reverse-button-potions">Z-A</button>
-        </div>
+      </div>
       <div id="potions" class="grid-space">
       </div>
     </section><br>
-    
+
   </main><br>
+
   <footer>
     <div class="footer">
       <p class="credit">Inspire in The Wizarding World</p>
