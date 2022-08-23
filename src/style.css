@@ -7,7 +7,7 @@
 body {
   background-image: url(./Images/star.jpg);
   color: white;
-  width: 90rem;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {}
@@ -44,14 +44,14 @@ body {
 #spells,
 #potions,
 #books {
-  margin-left: 2rem;
+  margin-left: 5%;
   padding: 1%;
   color: white;
   height: 30rem;
-  width: 85rem;
+  width: 90%;
   border: 0.5rem solid black;
   display: grid;
-  grid-template-columns: repeat(5, 19%);
+  grid-template-columns: repeat(5, 18%);
   gap: 1rem 1rem;
   overflow: auto;
   align-items: stretch;
@@ -276,7 +276,7 @@ ul,
 footer {
   background-image: url(./Images/Background/footer.jpg);
   height: 6rem;
-  width: 90rem;
+  width: 100%;
 }
 
 .footer {
@@ -446,11 +446,12 @@ input::placeholder {
   height: auto;
 }
 
-h3 {
+h2 {
   text-align: center;
   margin-right: 2rem;
 }
 
 h2.header-books {
   text-align: start;
+  margin-left: 5%;
 }
